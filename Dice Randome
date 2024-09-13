@@ -1,1 +1,28 @@
-Hello world!
+#include <iostream>
+#include <string>
+#include <Windows.h>
+#include <cstdlib> 
+#include <ctime> 
+
+using namespace std;
+
+
+
+int main() 
+{
+    SetConsoleOutputCP(1251);
+
+    srand(static_cast<unsigned int>(time(0)));
+
+    while (true)
+    {
+        int cube1 = (rand() % 6) + 1;
+        int cube2 = (rand() % 6) + 1;
+    
+        cout << "Випало на кубику 1: " << cube1 << endl;
+        cout << "Випало на кубику 2: " << cube2 <<  "\n " << endl;
+
+        cin.ignore();
+    } 
+}
+
